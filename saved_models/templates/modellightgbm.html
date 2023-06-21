@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Money Laundering</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+
+  <link rel="shortcut icon"
+  href="/static/assets/img/logo.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="/static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/static/assets/css/style.css" rel="stylesheet">
+
+  <style>
+    #loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999999999;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.7);
+  }
+  .loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #363e75;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    left: 50%;
+    margin-left: -4em;
+    display: block;
+    animation: spin 2s linear infinite;
+  }
+  .loader,
+  .loader:after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -4.05em;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+</style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center">
+        <img src="/static/assets/img/logo.png" alt="">
+        <span>SmurFing</span>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+
+            <li><a class="nav-link scrollto " href="/">Home</a></li>
+            <li><a class="nav-link scrollto" href="#blog">About</a></li>
+            <li><a class="nav-link scrollto" href="/">Models</a></li>
+         
+            <li><a class="nav-link scrollto" href="/">FAQ</a></li>
+            <li><a href="/">Team</a></li>
+          <!-- <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="active" href="blog.html">Blog</a></li> -->
+          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#topfoot">Contact</a></li>
+          <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Models</li>
+        </ol>
+        <h2>LightGBM</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Blog Section ======= -->
+    <!-- <section id="blog" class="blog">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-center">
+
+          <div class="col-lg-8 entries">
+
+            <article class="entry">
+
+              <div class="entry-img">
+                <img src="/static/assets/img/blog/keras.png" alt="" class="img-fluid">
+              </div>
+
+              <h2 class="entry-title">
+                <a href="https://catboost.ai/en/docs/concepts/python-usages-examples" target=”_blank”>Keras is a powerful gradient boosting framework</a>
+              </h2> -->
+
+              <!-- <div class="entry-meta">
+                <ul>
+                  <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="https://catboost.ai/en/docs/concepts/python-usages-examples">John Doe</a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="https://catboost.ai/en/docs/concepts/python-usages-examples"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="https://catboost.ai/en/docs/concepts/python-usages-examples">12 Comments</a></li>
+                </ul>
+              </div> -->
+
+              <!-- <div class="entry-content">
+                <p>
+                    Long Short-Term Memory, which is a type of recurrent neural network (RNN) architecture that is capable of processing sequential data, such as time series or natural language text. Unlike traditional RNNs, which have a simple architecture and are prone to the vanishing gradient problem, LSTM networks have a more complex structure that allows them to selectively remember or forget information over time.                </p>
+                <div class="read-more">
+                  <a href="https://catboost.ai/en/docs/concepts/python-usages-examples" target=”_blank”>Read More</a>
+                </div>
+              </div>
+
+            </article> -->
+            <!-- End blog entry -->
+
+           
+
+       
+
+            
+
+          
+
+          <!-- </div> -->
+          <!-- End blog entries list -->
+
+        
+
+        <!-- </div>
+
+      </div>
+    </section> -->
+    
+    <!-- End Blog Section -->
+
+</main><!-- End #main -->
+    <footer id="footer" class="footer">
+    <div class="footer-newsletter">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 text-center">
+             			<h2 class="entry-title" style="color: #012970;font-weight: bold;">Money Laundering Detection using LightGBM Classifier</h2>
+            </div>
+            <!-- <div class="col-lg-6">
+              <form action="" method="post">
+                <input type="email" name="email"><input type="submit" value="Subscribe">
+              </form>
+            </div> -->
+          </div>
+        </div>
+      </div>
+
+      
+	<section class="testimonials text-center">
+		<div class="container-fluid">
+
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-xs-12">
+					
+                   
+					<form  method="post" id="datafetch_form" enctype="multipart/form-data">
+            <div class="form-group files color" style="padding-top: 10px;">
+							<input type="text" name = "type"  class="form-control" placeholder="Select the Type of Transfer." disabled>
+						</div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1">
+              <label class="form-check-label" for="inlineRadio1">CASH_OUT</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2">
+              <label class="form-check-label" for="inlineRadio2">PAYMENT</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3">
+              <label class="form-check-label" for="inlineRadio3">CASH_IN</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="4">
+              <label class="form-check-label" for="inlineRadio4">TRANSFER</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadi05" value="5">
+              <label class="form-check-label" for="inlineRadio5">DEBIT</label>
+            </div>
+					
+            <div class="form-group files color" style="padding-top: 10px;">
+							<input type="text" name = "amount" id="amount" class="form-control" placeholder="Enter Amount." required>
+						</div>
+            <div class="form-group files color" style="padding-top: 10px;">
+							<input type="text" name = "orgoldbal" id="orgoldbal" class="form-control" placeholder="Enter Origin Account No." required>
+						</div>
+            <div class="form-group files color" style="padding-top: 10px;">
+							<input type="text" name = "orgnewbal" id="orgnewbal" class="form-control" placeholder="Enter  Balance." required>
+						</div>
+
+                        <div class="form-group files color" style="padding-top: 10px;">
+							<input type="text" name = "desoldbal" id="desoldbal" class="form-control" placeholder="Enter Destination Account No." required>
+						</div>
+            <div class="form-group files color" style="padding-top: 10px;">
+							<input type="text" name = "desnewbal" id="desnewbal" class="form-control" placeholder="Enter  Balance." required>
+						</div>
+
+                        <div class="form-group files color" style="padding-top: 10px;">
+							<input type="text" name = "Acctype"  class="form-control" placeholder="Select the Type of Account." disabled>
+						</div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" id="inlineRadio7" value="0">
+                            <label class="form-check-label" for="inlineRadio7">DOMESTIC</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptionsAcc" id="inlineRadio8" value="1">
+                            <label class="form-check-label" for="inlineRadio8">FOREGIN</label>
+                          </div>
+						<!-- <div class=""><button style="font-weight: bold; background-color: #4154f1;font-size: 16px;
+                            padding: 0 30px;
+                            margin: 3px;
+                            background: #4154f1;
+                            color: #fff;
+                            transition: 0.3s;
+                            padding-top: 10px;
+                            margin-top: 20px;
+                            padding-bottom: 10px;
+                            border-radius: 4px;"class="form-control btn-primary" id="customfile"> Predict</button></div> -->
+												<div class=""><input style="font-weight: bold; background-color: #4154f1;font-size: 16px;
+                          padding: 0 30px;
+                          margin: 3px;
+                          background: #4154f1;
+                          color: #fff;
+                          transition: 0.3s;
+                          text-align: center;
+                          padding-top: 10px;
+                          margin-top: 20px;
+                          padding-bottom: 10px;
+                          border-radius: 4px;"class="form-control btn-primary"  type="submit" value="Predict"> </div>
+					</form>
+				</div>
+				<!-- <div class="res-container  col-md-6 col-xs-12">
+					<div class="result-box shadow rounded-lg" style="width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 260px;
+                    padding: 10px;
+                    overflow-y: auto;">
+						<h6 class="title">Results</h6>
+						<div class="json-result">
+							
+						</div>
+					</div>
+				</div> -->
+
+
+                				<div class="res-container  text-center">
+					<div class="result-box shadow rounded-lg" style="width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 50px;
+                    height: 260px;
+              
+                    padding: 10px;
+                    overflow-y: auto;">
+						<h6 class="title" style="      text-transform: uppercase;
+                        font-weight: bold;">Results</h6>
+						<div class="json-result" id="resssssssssss">
+            
+						</div>
+            <h6 class="title" style="      text-transform: uppercase;
+            font-weight: bold;">Comparison Data</h6>
+            <table id="compare-table"class="table table-hover">
+                <!-- Comparison data will be dynamically added here -->
+            </table>
+					</div>
+				</div>
+			</div>						
+		</div>
+	</section>
+
+  <!-- <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+        <th scope="col">Handle</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Mark</td>
+      <td>Otto</td>
+      <td>@mdo</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Larry</td>
+      <td>the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+  </table> -->
+
+    <!-- ======= Footer ======= -->
+    <!-- <footer id="footer" class="footer"> -->
+
+
+    
+        <div class="footer-top" id="topfoot">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-5 col-md-12 footer-info">
+                <a href="/ "class="logo d-flex align-items-center">
+                      <img src="/static/assets/img/logo.png"alt="">
+
+                  <span>SmurFing</span>
+                </a>
+                <p>
+                  
+                  Money laundering is the process of concealing the origins of illegally obtained funds by making them appear to be legitimate. It involves transferring the proceeds of criminal activity into legitimate assets or accounts, making it difficult for authorities to trace the funds back to their illegal source.              </p>
+                  <div class="social-links mt-3">
+                  <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+    
+              <div class="col-lg-2 col-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Home</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">About us</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Services</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                </ul>
+              </div>
+    
+              <!-- <div class="col-lg-2 col-6 footer-links">
+                <h4>Our Services</h4>
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
+                  <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                </ul>
+              </div> -->
+    
+              <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <h4>Contact Us</h4>
+                <p>
+                  Veliyath House <br>
+                  Edayappuram, Aluva 683101<br>
+                  kerala <br><br>
+                  <strong>Phone:</strong> +91 9949745794<br>
+                  <strong>Email:</strong> smurFing@gmail.com<br>
+                </p>
+    
+              </div>
+    
+            </div>
+          </div>
+        </div>
+    
+        <div class="container">
+          <div class="copyright">
+            &copy; Copyright <strong><span>SmurFing</span></strong>. All Rights Reserved
+          </div>
+          <div class="credits">
+     
+            Designed by <a href="https://github.com/amalvs07" target="_blank">Amal V S</a>
+          </div>
+        </div>
+      </footer><!-- End Footer -->
+
+      <!-- <div id="loading"><div class="loader"></div></div> -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script>
+  // $(document).ready(function(){
+  //   $('#loading').hide();
+  //   $("#customfile").click(function(e){
+  //     e.preventDefault();
+  //     $('#loading').show();
+  //     // var path = $("#csvfile").val();
+  //      // Get values of input field and radio button
+  //   var AmountValue = $('#amount').val();
+  //   var OldbalValue = $('#oldbal').val();
+  //   var NewbalValue = $('#newbal').val();
+  //   var radioValue = $('input[name=inlineRadioOptions]:checked').val();
+  //     $.ajax({
+  //       //change url below
+  //       url : "/keras",
+  //       type: "POST",
+  //       data: {type:radioValue,amount:AmountValue,oldbalance:OldbalValue,newbalance:NewbalValue},
+  //       success: function(response){
+  //         // Handle successful response from server
+  //       console.log(response);
+  //         $(".json-result").html('The Transaction is ' + '<pre>  File Name : ' + response + '</pre>');	
+  //         $('#loading').hide();
+  //       },
+  //       error: function(xhr, status, error) {
+  //       // Handle error from server
+  //       console.log(error);
+  //       }
+  //     });
+  //   });
+  // });
+</script>
+
+
+<script>
+  $(document).ready(function() {
+      // Handle form submission
+      $('#datafetch_form').submit(function(event) {
+          // Prevent default form submission
+          event.preventDefault();
+
+          // Serialize form data into JSON
+          var formData = {
+              'inlineRadioOptions': $('input[name="inlineRadioOptions"]:checked').val(),
+              'amount': $('#amount').val(),
+              'orgoldbal': $('#orgoldbal').val(),
+              'orgnewbal': $('#orgnewbal').val(),
+              'desoldbal': $('#desoldbal').val(),
+              'desnewbal': $('#desnewbal').val(),
+              'Acctype': $('input[name="inlineRadioOptionsAcc"]:checked').val()
+          };
+
+          // Send AJAX request to Flask route
+          $.ajax({
+              type: 'POST',
+              url: '/LGmmodel',
+              data: formData,
+              dataType: 'json',
+              success: function(response) {
+                  // Update the output section with the received data
+                  // $('#outputSection').text('Output: ' + JSON.stringify(response));
+                  $('#resssssssssss').text('Output : ' + response.output_data);
+                  var outputData = response.output_data;
+                  var compareData = response.compare_data;
+
+                        // Display the output data
+                        $('#resssssssssss').text(outputData);
+
+                        // Display the comparison data
+                        var compareTable = $('#compare-table');
+                        compareTable.empty();
+
+                        $.each(compareData, function(key, value) {
+                            var row = '<tr><th>' + key + '</th><td>' + value + '</td></tr>';
+                            compareTable.append(row);
+                        });
+              },
+              error: function(error) {
+                  console.log(error);
+              }
+          });
+      });
+  });
+</script>
+
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="/static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="/static/assets/vendor/aos/aos.js"></script>
+  <script src="/static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/static/assets/js/main.js"></script>
+
+</body>
+
+</html>
